@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riaan Joshi | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ✅ Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- ✅ Fixed Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="logo">Riaan Joshi</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ✅ Spacing Between Navbar & First Tile -->
+    <div class="spacer"></div>
+
+    <section class="floating-section hero-section fade-in" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hey! I'm <span class="highlight">Riaan (ree-ahn) Joshi</span></h1>
+                <h2>A Student at UT Austin Studying Informatics & Data Science</h2>
+                <p class="intro-text">
+                    I'm passionate about software development, machine learning, and finance.
+                </p>
+    
+                <div class="button-spacing"></div>
+    
+                <div class="hero-buttons">
+                    <a href="assets/Riaan_Joshi_Resume_SW_ML_DS.pdf" download class="resume-btn">Download Resume</a>
+                    <a href="https://github.com/rdj5415" target="_blank" class="social-btn">GitHub</a>
+                    <a href="https://www.linkedin.com/in/riaan-joshi-in" target="_blank" class="social-btn">LinkedIn</a>
+                    <a href="https://instagram.com/riaan_joshi" target="_blank" class="social-btn insta-btn">Instagram</a>
+                </div>
+            </div>
+    
+            <!-- ✅ Headshot with Floating Animation -->
+            <div class="hero-image fade-in">
+                <img src="assets/headshot1.png" alt="Riaan Joshi" class="headshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ ABOUT ME SECTION -->
+    <section class="floating-section about-section" id="about-me">
+        <div class="about-content">
+            <div class="about-images">
+                <img src="assets/collage1.mov" alt="Collage Image 1" class="about-img">
+                <img src="assets/collage2.heic" alt="Collage Image 2" class="about-img">
+            </div>
+
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hey! I’m a <span class="highlight">data-driven student</span> who’s always looking to learn, build cool things,  
+                    and maybe grab a <span class="highlight">Baja Blast Zero</span> along the way.  
+                    I grew up in <span class="highlight">Dallas</span>, played <span class="highlight">soccer</span> and <span class="highlight">wrestled</span> in high school at Coppell,  
+                    and somewhere in between all that, I developed a deep love for <span class="highlight">Taco Bell</span> and <span class="highlight">diet drinks</span>.  
+                </p>
+
+                <p>
+                    I started college at <span class="highlight">Texas A&M</span> but quickly realized <span class="highlight">College Station</span> wasn’t the right fit for me.  
+                    So, I transferred to <span class="highlight">UT Austin</span>, where I’ve been diving deep into <span class="highlight">software development</span>  
+                    and working on <span class="highlight">machine learning</span> projects with startups.  
+                </p>
+
+                <p>
+                    Aside from acedmics and extracurriculars, I'm a huge  <span class="highlight">Texas Football</span> fan and even bigger <span class="highlight">Food Enthusiast</span>. 
+                    I love being active, whether that's <span class="highlight">Wrestling</span> with the Longhorn Team or <span class="highlight">Pickleball</span> with my friends.
+                </p>
+
+                <p>
+                    If you want to chat about anything <span class="highlight">Software/ML</span> or even debate about the best <span class="highlight">Taco Bell Order</span>, please don't hesitate to reach out!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ PROJECTS SECTION -->
+    <section class="floating-section projects-section" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project">
+            <div class="project-media">
+                <img src="assets/project1.png" alt="Crypto Portfolio and Price Predictor" class="project-img">
+            </div>
+            <div class="project-text">
+                <h3><a href="https://github.com/yourgithub/crypto-project" target="_blank" class="project-link">Crypto Portfolio and Price Predictor</a></h3>
+                <h4>ML & Financial Engineering</h4>
+                <ul>
+                    <li>Built a Python-based crypto portfolio tracker</li>
+                    <li>Integrated financial APIs for real-time prices</li>
+                    <li>Trained an ML model for price predictions</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project reverse">
+            <div class="project-text">
+                <h3><a href="https://github.com/yourgithub/option-pricing" target="_blank" class="project-link">Option Pricing Simulator</a></h3>
+                <h4>Computational Finance & Simulation</h4>
+                <ul>
+                    <li>Simulated stock price paths using models</li>
+                    <li>Developed an interactive pricing web app</li>
+                    <li>Visualized option payoffs with Matplotlib</li>
+                </ul>
+            </div>
+            <div class="project-media">
+                <img src="assets/project2.png" alt="Option Pricing Simulator" class="project-img">
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-media">
+                <img src="assets/project3.png" alt="Operation Serve DFW" class="project-img">
+            </div>
+            <div class="project-text">
+                <h3><a href="https://operationservdfw.com" target="_blank" class="project-link">Operation Serve DFW</a></h3>
+                <h4>Web Development & Real-Time Data Integration</h4>
+                <ul>
+                    <li>Developed responsive React website</li>
+                    <li>Integrated Firebase for real-time updates</li>
+                    <li>Improved SEO and mobile user experience</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project reverse">
+            <div class="project-text">
+                <h3><a href="https://thriveeducation.com" target="_blank" class="project-link">Thrive Education</a></h3>
+                <h4>Frontend Development & Performance Optimization</h4>
+                <ul>
+                    <li>Built scalable data table with React.js</li>
+                    <li>Implemented search, filtering, and pagination</li>
+                    <li>Developed a patient management dashboard</li>
+                </ul>
+            </div>
+            <div class="project-media">
+                <img src="assets/project4.png" alt="Thrive Education" class="project-img">
+            </div>
+        </div>
+    </section>
+
+        <!-- ✅ CONTACT ME SECTION (NEWLY ADDED) -->
+    <section class="floating-section contact-section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form id="contact-form">
+            <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-group">
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+
+</body>
+</html>
+
