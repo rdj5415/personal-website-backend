@@ -42,7 +42,7 @@
                 <div class="button-spacing"></div>
     
                 <div class="hero-buttons">
-                    <a href="assets/Riaan_Joshi_Resume_SW_ML_DS.pdf" download class="resume-btn">Download Resume</a>
+                    <a href="assets/riaan_resume_website.pdf" download class="resume-btn">Download Resume</a>
                     <a href="https://github.com/rdj5415" target="_blank" class="social-btn">GitHub</a>
                     <a href="https://www.linkedin.com/in/riaan-joshi-in" target="_blank" class="social-btn">LinkedIn</a>
                     <a href="https://instagram.com/riaan_joshi" target="_blank" class="social-btn insta-btn">Instagram</a>
@@ -60,8 +60,8 @@
     <section class="floating-section about-section" id="about-me">
         <div class="about-content">
             <div class="about-images">
-                <img src="assets/collage1.mov" alt="Collage Image 1" class="about-img">
-                <img src="assets/collage2.heic" alt="Collage Image 2" class="about-img">
+                <img src="assets/collage1.jpeg" alt="Collage Image 1" class="about-img">
+                <img src="assets/collage2.jpeg" alt="Collage Image 2" class="about-img">
             </div>
 
             <div class="about-text">
@@ -95,25 +95,27 @@
     <section class="floating-section projects-section" id="projects">
         <h2 class="section-title">Projects</h2>
 
-        <div class="project">
-            <div class="project-media">
-                <img src="assets/project1.png" alt="Crypto Portfolio and Price Predictor" class="project-img">
-            </div>
+        <!-- ✅ Project 1 -->
+        <div class="project-crypto">
             <div class="project-text">
-                <h3><a href="https://github.com/yourgithub/crypto-project" target="_blank" class="project-link">Crypto Portfolio and Price Predictor</a></h3>
-                <h4>ML & Financial Engineering</h4>
+                <h3><a href="https://github.com/rdj5415/crypto-portfolio-and-predictor" target="_blank">Crypto Portfolio and Price Predictor</a></h3>
+                <p><strong>ML & Financial Engineering</strong></p>
                 <ul>
                     <li>Built a Python-based crypto portfolio tracker</li>
                     <li>Integrated financial APIs for real-time prices</li>
-                    <li>Trained an ML model for price predictions</li>
+                    <li>Trained an ML model to predict future prices</li>
                 </ul>
             </div>
+            <div class="project-media">
+                <video src="assets/crypto.mov" class="project-video" autoplay loop muted></video>
+            </div>
         </div>
-
-        <div class="project reverse">
+        
+        <!-- ✅ Project 2 -->
+        <div class="project-option">
             <div class="project-text">
-                <h3><a href="https://github.com/yourgithub/option-pricing" target="_blank" class="project-link">Option Pricing Simulator</a></h3>
-                <h4>Computational Finance & Simulation</h4>
+                <h3><a href="https://github.com/rdj5415/option-pricing" target="_blank">Option Pricing Simulator</a></h3>
+                <p><strong>Computational Finance & Simulation</strong></p>
                 <ul>
                     <li>Simulated stock price paths using models</li>
                     <li>Developed an interactive pricing web app</li>
@@ -121,45 +123,51 @@
                 </ul>
             </div>
             <div class="project-media">
-                <img src="assets/project2.png" alt="Option Pricing Simulator" class="project-img">
+                <video src="assets/option_pricing.mov" class="project-video" autoplay loop muted></video>
             </div>
         </div>
-
-        <div class="project">
-            <div class="project-media">
-                <img src="assets/project3.png" alt="Operation Serve DFW" class="project-img">
-            </div>
+        
+        <!-- ✅ Project 3 -->
+        <div class="project-operation">
             <div class="project-text">
-                <h3><a href="https://operationservdfw.com" target="_blank" class="project-link">Operation Serve DFW</a></h3>
-                <h4>Web Development & Real-Time Data Integration</h4>
+                <h3><a href="https://operationservedfw.org" target="_blank">Operation Serve DFW</a></h3>
+                <p><strong>Web Development & Real-Time Data Integration</strong></p>
                 <ul>
                     <li>Developed responsive React website</li>
                     <li>Integrated Firebase for real-time updates</li>
                     <li>Improved SEO and mobile user experience</li>
                 </ul>
             </div>
+            <div class="project-media">
+                <video src="assets/operation_serve.mov" class="project-video" autoplay loop muted></video>
+            </div>
         </div>
-
-        <div class="project reverse">
+        
+        <!-- ✅ Project 4: Thrive Education -->
+        <div class="project-thrive">
             <div class="project-text">
-                <h3><a href="https://thriveeducation.com" target="_blank" class="project-link">Thrive Education</a></h3>
-                <h4>Frontend Development & Performance Optimization</h4>
+                <h3><a href="https://thethriveeducation.com" target="_blank">Thrive Education</a></h3>
+                <p><strong>Frontend Development & Performance Optimization</strong></p>
                 <ul>
                     <li>Built scalable data table with React.js</li>
-                    <li>Implemented search, filtering, and pagination</li>
-                    <li>Developed a patient management dashboard</li>
+                    <li>Added search, filtering, and pagination</li>
+                    <li>Developed a working patient dashboard</li>
                 </ul>
             </div>
             <div class="project-media">
-                <img src="assets/project4.png" alt="Thrive Education" class="project-img">
-            </div>
+                <img src="assets/thrive.png" class="thrive-image" alt="Thrive Project Image">
+            </div>            
         </div>
+
+               
+
+        
     </section>
 
         <!-- ✅ CONTACT ME SECTION (NEWLY ADDED) -->
     <section class="floating-section contact-section" id="contact">
         <h2 class="section-title">Contact Me</h2>
-        <form id="contact-form">
+        <form action="https://formspree.io/f/myzkddvv" method="POST" class="contact-form">
             <div class="input-group">
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
             </div>
@@ -171,8 +179,8 @@
             </div>
             <button type="submit" class="submit-btn">Send Message</button>
         </form>
+        </form>
     </section>
-
 
 </body>
 </html>

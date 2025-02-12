@@ -88,3 +88,35 @@ document.addEventListener("DOMContentLoaded", function () {
         el.classList.add("show");
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const mediaElements = document.querySelectorAll(".project-video, .thrive-image");
+
+    mediaElements.forEach(media => {
+        media.addEventListener("click", function (event) {
+            event.stopPropagation(); // Prevents unwanted bubbling issues
+
+            // If already enlarged, shrink back
+            if (this.classList.contains("enlarged")) {
+                this.classList.remove("enlarged");
+            } else {
+                // Close any other enlarged media before opening this one
+                document.querySelectorAll(".enlarged").forEach(enlargedMedia => {
+                    enlargedMedia.classList.remove("enlarged");
+                });
+
+                this.classList.add("enlarged"); // Expand clicked media
+            }
+        });
+    });
+
+    // Click anywhere outside to close full-screen media
+    document.addEventListener("click", function (event) {
+        if (!event.target.classList.contains("project-video") && !event.target.classList.contains("thrive-image")) {
+            document.querySelectorAll(".enlarged").forEach(enlargedMedia => {
+                enlargedMedia.classList.remove("enlarged");
+            });
+        }
+    });
+});
+
