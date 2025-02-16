@@ -1,4 +1,3 @@
-/* ✅ Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,6 @@
     scroll-behavior: smooth;
 }
 
-/* ✅ Dynamic Purple Background */
 body {
     background: linear-gradient(to right, #7a2fdb, #c084fc);
     background-size: cover;
@@ -15,7 +13,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ✅ Particle.js Fullscreen Effect */
 #particles-js {
     position: fixed;
     width: 100%;
@@ -25,7 +22,6 @@ body {
     left: 0;
 }
 
-/* ✅ Fixed Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -68,12 +64,10 @@ body {
     color: #7f67ff;
 }
 
-/* ✅ Space Between Navbar & First Tile */
 .spacer {
     height: 100px;
 }
 
-/* ✅ Floating Section */
 .floating-section {
     width: 97vw;
     max-width: 1300px;
@@ -84,7 +78,6 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* ✅ Hero Section */
 .hero-section {
     display: flex;
     justify-content: center;
@@ -98,7 +91,6 @@ body {
     gap: 50px;
 }
 
-/* ✅ Headshot Styling */
 .hero-image img {
     width: 250px;
     height: 250px;
@@ -107,7 +99,6 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* ✅ Hero Text */
 .hero-text {
     max-width: 600px;
 }
@@ -128,7 +119,6 @@ body {
     color: #444;
 }
 
-/* ✅ Buttons */
 .hero-buttons {
     margin-top: 20px;
 }
@@ -163,7 +153,6 @@ body {
     color: white;
 }
 
-/* ✅ Instagram Button */
 .insta-btn {
     background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
     color: white;
@@ -180,7 +169,6 @@ body {
     opacity: 0.8;
 }
 
-/* ✅ About Me Section */
 .about-section {
     display: flex;
     justify-content: center;
@@ -194,14 +182,12 @@ body {
     margin: 50px auto;
 }
 
-/* ✅ About Me Content */
 .about-content {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-/* ✅ About Me Images */
 .about-images {
     display: flex;
     flex-direction: column;
@@ -216,7 +202,6 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* ✅ About Me Text */
 .about-text {
     max-width: 600px;
 }
@@ -226,13 +211,11 @@ body {
     line-height: 1.6;
 }
 
-/* ✅ Highlight Key Words */
 .highlight {
     font-weight: bold;
     color: #5e46d0;
 }
 
-/* ✅ Center "Projects" Title */
 .section-title {
     text-align: center;
     font-size: 32px;
@@ -240,9 +223,8 @@ body {
     margin-bottom: 40px;
 }
 
-/* ✅ Projects Section - Maintain Consistency */
 .projects-section {
-    width: 75vw; /* Slightly reduced width for balance */
+    width: 75vw;
     max-width: 900px;
     margin: 50px auto;
     padding: 40px;
@@ -251,79 +233,63 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* ✅ Project Layout - Spaced Correctly */
 .project {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px; /* Ensures space between text & media */
-    margin-bottom: 100px; /* Space between project tiles */
+    gap: 60px;
+    margin-bottom: 100px;
 }
 
-/* ✅ Project 1 (Crypto Portfolio) - Align RIGHT */
 .project-crypto {
     display: flex;
-    flex-direction: row-reverse; /* Aligns text right, media left */
+    flex-direction: row-reverse;
     text-align: right;
     justify-content: flex-end;
     gap: 60px;
     margin-bottom: 100px;
 }
 
-/* ✅ Project 2 (Option Pricing) - FORCE Align LEFT */
 .project-option {
     display: flex;
-    flex-direction: row !important; /* Ensure layout is left-aligned */
+    flex-direction: row !important;
     text-align: left !important;
     justify-content: flex-start !important;
     gap: 60px;
     margin-bottom: 100px;
 }
 
-/* ✅ Project 3 (Operation Serve) - Align RIGHT */
 .project-operation {
     display: flex;
-    flex-direction: row-reverse; /* Aligns text right, media left */
+    flex-direction: row-reverse;
     text-align: right;
     justify-content: flex-end;
     gap: 60px;
     margin-bottom: 100px;
 }
 
-/* ✅ Project 4 (Thrive Education) - FORCE Align LEFT */
 .project-thrive {
     display: flex;
-    flex-direction: row !important; /* Ensure layout is left-aligned */
+    flex-direction: row !important;
     text-align: left !important;
     justify-content: flex-start !important;
     gap: 60px;
     margin-bottom: 100px;
 }
 
-/* ✅ Ensure Text & Media Have Proper Space */
 .project-text {
-    width: 48%; /* Balance text with media */
+    width: 48%;
     min-width: 320px;
 }
 
-/* ✅ Slightly Increase Media Size */
 .project-media video {
-    width: 250px !important; /* Increased from 220px */
+    width: 250px !important;
     height: auto !important;
 }
 
-/* ✅ Center Titles for Projects 1 & 3 */
-.project-crypto .project-text h3,
-.project-operation .project-text h3 {
-    text-align: center;
-    width: 100%;
-}
-
-
-/* ✅ Ensure Videos Resize Properly */
 .project-video {
-    width: 220px !important; /* Keep width consistent */
-    height: auto !important; /* Maintain aspect ratio */
+    width: 220px !important;
+    height: auto !important;
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -332,26 +298,22 @@ body {
     cursor: pointer;
 }
 
-
-/* ✅ Text Area - Keep Consistent Width */
 .project-text {
-    width: 50%; /* Adjusted for better text-media balance */
+    width: 50%;
     min-width: 320px;
 }
 
-/* ✅ Project Media (Videos & Images) */
 .project-media {
-    width: 50%; /* Keep media aligned with text */
+    width: 50%;
     min-width: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* ✅ Ensure Videos Resize Properly */
 .project-video {
-    width: 220px !important; /* Keep width consistent */
-    height: auto !important; /* Maintain aspect ratio */
+    width: 220px !important;
+    height: auto !important;
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -360,21 +322,18 @@ body {
     cursor: pointer;
 }
 
-/* ✅ Project Text */
 .project-text {
     max-width: 600px;
 }
 
-/* ✅ Project Links with Underline & Purple Highlight */
 .project-link {
     text-decoration: underline;
     color: #5e46d0;
     font-weight: bold;
 }
 
-/* ✅ Contact Me Section - Tile Size */
 .contact-section {
-    width: 70vw; /* Keeps tile smaller */
+    width: 70vw;
     max-width: 800px;
     margin: 50px auto;
     padding: 45px;
@@ -390,7 +349,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* ✅ Contact Form */
 #contact-form {
     display: flex;
     flex-direction: column;
@@ -400,10 +358,9 @@ body {
     margin: auto;
 }
 
-/* ✅ Input Fields */
 .input-group input {
     width: 100%;
-    max-width: 500px; /* Standardized width */
+    max-width: 500px;
     padding: 15px;
     font-size: 18px;
     border: 2px solid #5e46d0;
@@ -412,25 +369,23 @@ body {
     transition: border-color 0.3s;
 }
 
-/* ✅ Make the Message Box Bigger */
 .input-group textarea {
     width: 100%;
-    max-width: 650px; /* Wider than input fields */
-    height: 150px; /* Taller for more text space */
+    max-width: 650px;
+    height: 150px;
     padding: 15px;
     font-size: 18px;
     border: 2px solid #5e46d0;
     border-radius: 5px;
     outline: none;
     transition: border-color 0.3s;
-    resize: vertical; /* Allows user to adjust size */
+    resize: vertical;
 }
 
 .input-group input:focus, .input-group textarea:focus {
     border-color: #7c3aed;
 }
 
-/* ✅ Submit Button */
 .submit-btn {
     background-color: #5e46d0;
     color: white;
@@ -448,7 +403,6 @@ body {
     background-color: #7c3aed;
 }
 
-/* ✅ General Animation for Scrolling Sections */
 .fade-in {
     opacity: 0;
     transform: translateX(-50px);
@@ -460,14 +414,12 @@ body {
     transform: translateX(0);
 }
 
-/* ✅ Floating Animation for Headshot & Media */
 @keyframes floatAnimation {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
 }
 
-/* ✅ Apply Floating Animation to All Media */
 .hero-image img,
 .about-video,
 .about-img,
@@ -475,7 +427,6 @@ body {
     animation: floatAnimation 4s ease-in-out infinite;
 }
 
-/* ✅ Ensure Smooth Transitions for Images/Videos */
 .hero-image img,
 .about-video,
 .about-img,
@@ -483,7 +434,6 @@ body {
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 
-/* ✅ Ensuring a Smooth Entrance Effect */
 .hidden {
     opacity: 0;
     transform: translateY(50px);
@@ -495,18 +445,16 @@ body {
     transform: translateY(0);
 }
 
-/* ✅ Floating Animation */
 @keyframes floatAnimation {
     0% { transform: translateY(0); }
     50% { transform: translateY(-3px); }
     100% { transform: translateY(0); }
 }
 
-/* ✅ Standard Styling for All Videos */
 .project-video {
     position: absolute;
-    width: 220px !important; /* Set exact width */
-    height: auto !important; /* Keep aspect ratio */
+    width: 220px !important;
+    height: auto !important;
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -515,30 +463,27 @@ body {
     cursor: pointer;
 }
 
-/* ✅ Adjust Individual Video Positions */
 .crypto-video {
-    left: 50px; /* Align properly with Crypto Project */
+    left: 50px;
     top: 40%;
 }
 
 .option-video {
-    left: 750px; /* Move it next to Option Pricing Project */
+    left: 750px;
     top: 45%;
 }
 
 .operation-video {
-    right: 120px; /* Align with Operation Serve */
+    right: 120px;
     top: 60%;
 }
 
-/* ✅ Floating Animation */
 @keyframes floatAnimation {
     0% { transform: translateY(0); }
     50% { transform: translateY(-3px); }
     100% { transform: translateY(0); }
 }
 
-/* ✅ Fullscreen Video When Clicked */
 .project-video.enlarged {
     position: fixed;
     top: 50%;
@@ -556,43 +501,37 @@ body {
     animation: none;
 }
 
-/* ✅ Left-align subtitles for Projects 1 & 3 */
 .project-crypto .project-text p,
 .project-operation .project-text p {
     text-align: left !important;
 }
 
-/* ✅ Remove default bullets & align text properly */
 .project-text ul {
-    list-style-type: none !important; /* Remove default bullets */
-    padding-left: 0 !important; /* Keep text aligned */
+    list-style-type: none !important;
+    padding-left: 0 !important;
 }
 
-/* ✅ Add consistent '--' before each item */
 .project-text ul li::before {
-    content: "– "; /* Add '--' before each line */
-    color: #000; /* Match text color */
-    font-weight: bold; /* Make it stand out */
-    margin-right: 6px; /* Add spacing between '--' and text */
+    content: "– ";
+    color: #000;
+    font-weight: bold;
+    margin-right: 6px;
 }
 
-/* ✅ Ensure even spacing between lines */
 .project-text ul li {
-    display: flex; /* Align '--' and text properly */
-    align-items: center; /* Prevent misalignment */
-    line-height: 1.5; /* Ensure consistent spacing */
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
 }
 
-/* ✅ Center Titles Above Project Text */
 .project-text h3 {
     text-align: center;
     display: block;
     margin-bottom: 10px;
 }
 
-/* ✅ Apply Purple Highlight to Titles */
 .project-text h3 a {
-    color: #6a0dad; /* Purple color */
+    color: #6a0dad;
     text-decoration: none;
     font-weight: bold;
 }
@@ -602,7 +541,7 @@ body {
 }
 
 .thrive-image {
-    width: 300px !important;  /* FORCE super small */
+    width: 300px !important;
     height: 300px !important;
     max-width: 300px !important;
     max-height: 300px !important;
@@ -614,76 +553,28 @@ body {
     overflow: hidden !important;
 }
 
-/* ✅ Increase size for all project videos */
-.project-video {
-    width: 400px !important;  /* Adjust width */
-    height: auto !important;  /* Maintain aspect ratio */
-    max-width: 100%;  /* Prevent overflow */
-    object-fit: contain;
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
-}
-
-/* ✅ FORCE project videos to be BIGGER */
-.project-video {
-    width: 400px !important;  /* FORCE Large Width */
-    height: auto !important;  /* Maintain Aspect Ratio */
-    max-width: 400px !important;  /* Prevent Scaling Up */
-    min-width: 400px !important;  /* Prevent Shrinking */
-    object-fit: contain !important;
-    display: block !important;
-    overflow: hidden !important;
-    position: relative !important;
-}
-
-/* ✅ Floating Animation for Thrive Image */
-@keyframes floatAnimation {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
-
-.thrive-image {
-    width: 500px !important;  /* Adjust size as needed */
-    height: auto !important;
-    display: block !important;
-    object-fit: contain !important;
-    overflow: hidden !important;
-    position: relative !important;
-    animation: floatAnimation 4s ease-in-out infinite; /* Apply Floating Animation */
-}
-
-/* ✅ Add Purple Glow to Thrive Image */
-.thrive-image {
-    box-shadow: 0px 0px 20px rgba(150, 100, 255, 0.6); /* Light Purple Glow */
-}
-
-/* ✅ Light Purple Glow for All Media */
 .project-video, .project-img, .thrive-image {
-    box-shadow: 0px 0px 20px rgba(150, 100, 255, 0.6); /* Light Purple Glow */
+    box-shadow: 0px 0px 20px rgba(150, 100, 255, 0.6);
 }
 
 .thrive-image {
-    border-radius: 20px !important; /* Rounded Corners */
+    border-radius: 20px !important;
     overflow: hidden !important;
 }
 
-/* ✅ Add Purple Glow to Headshot & About Me Images */
 .hero-image img, .about-img {
-    box-shadow: 0px 0px 20px rgba(150, 100, 255, 0.6); /* Light Purple Glow */
-    border-radius: 20px; /* Rounded Corners */
+    box-shadow: 0px 0px 20px rgba(150, 100, 255, 0.6);
+    border-radius: 20px;
 }
 
-/* ✅ Add spacing between inputs in Contact Form */
 .input-group {
-    margin-bottom: 15px; /* Adds space below each input */
+    margin-bottom: 15px;
 }
 
 .input-group textarea {
-    margin-bottom: 20px; /* Extra space below the message box */
+    margin-bottom: 20px;
 }
 
-/* ✅ Full-Screen Mode for Clicked Media */
 .enlarged {
     position: fixed !important;
     top: 50% !important;
@@ -695,45 +586,78 @@ body {
     max-height: 100vh !important;
     object-fit: contain !important;
     z-index: 9999 !important;
-    background: rgba(0, 0, 0, 0.9) !important; /* Dim background */
+    background: rgba(0, 0, 0, 0.9) !important;
     border-radius: 0 !important;
     box-shadow: none !important;
     transition: all 0.3s ease-in-out !important;
     cursor: pointer !important;
 }
 
-/* ✅ Default Thrive Image Styling */
 .thrive-image {
-    width: 250px !important;  /* Normal size */
+    width: 250px !important;
     height: auto !important;
     max-width: 100% !important;
     object-fit: contain !important;
     display: block !important;
-    margin: 20px auto !important;  /* Center it */
-    border-radius: 15px !important; /* Rounded corners */
-    box-shadow: 0px 0px 20px rgba(150, 100, 255, 0.6) !important; /* Soft purple glow */
+    margin: 20px auto !important;
+    border-radius: 15px !important;
+    box-shadow: 0px 0px 20px rgba(150, 100, 255, 0.6) !important;
     transition: all 0.3s ease-in-out !important;
     cursor: pointer !important;
 }
 
-/* ✅ Full-Screen Mode for Thrive Image (Correct Centering) */
 .thrive-image.enlarged {
     position: fixed !important;
     top: 50% !important;
     left: 50% !important;
-    transform: translate(-50%, -50%) !important;  /* Forces exact center */
-    width: 85vw !important;  /* Expand to 85% of screen width */
-    height: auto !important;  /* Maintain aspect ratio */
+    transform: translate(-50%, -50%) !important;
+    width: 85vw !important;
+    height: auto !important;
     max-width: 85vw !important;
     max-height: 85vh !important;
     object-fit: contain !important;
     z-index: 9999 !important;
-    background: rgba(0, 0, 0, 0.9) !important; /* Dark background effect */
-    border-radius: 20px !important; /* Keep rounded corners */
-    box-shadow: 0px 0px 40px rgba(150, 100, 255, 0.8) !important; /* Purple glow */
+    background: rgba(0, 0, 0, 0.9) !important;
+    border-radius: 20px !important;
+    box-shadow: 0px 0px 40px rgba(150, 100, 255, 0.8) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
 }
 
+.project-video {
+    width: 400px !important;
+    height: auto !important;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
+.project-video {
+    width: 400px !important;
+    height: auto !important;
+    max-width: 400px !important;
+    min-width: 400px !important;
+    object-fit: contain !important;
+    display: block !important;
+    overflow: hidden !important;
+    position: relative !important;
+}
+
+@keyframes floatAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.thrive-image {
+    width: 500px !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: contain !important;
+    overflow: hidden !important;
+    position: relative !important;
+    animation: floatAnimation 4s ease-in-out infinite;
+    box-shadow: 0px 0px 20px rgba(150, 100, 255, 0.6);
+}

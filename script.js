@@ -1,4 +1,3 @@
-// Animated Particles Background
 particlesJS("particles-js", {
     particles: {
         number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -45,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         contactForm.addEventListener("submit", function (event) {
             event.preventDefault();
 
-            // Get form values
             const name = document.getElementById("name").value.trim();
             const email = document.getElementById("email").value.trim();
             const message = document.getElementById("message").value.trim();
@@ -55,14 +53,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            // Simulate form submission
             alert(`Thank you, ${name}! Your message has been sent.`);
             contactForm.reset();
         });
     }
 });
 
-// ✅ Function to Show Elements on Scroll
 function revealOnScroll() {
     let elements = document.querySelectorAll(".fade-in, .hidden");
 
@@ -73,16 +69,14 @@ function revealOnScroll() {
         if (position < windowHeight - 50) {
             el.classList.add("show");
         } else {
-            el.classList.remove("show"); // Optional: remove if you don't want it to disappear when scrolling back up
+            el.classList.remove("show"); 
         }
     });
 }
 
-// ✅ Run the function when scrolling
 window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll); // Also trigger on page load
+window.addEventListener("load", revealOnScroll); 
 
-// ✅ Ensure All Sections Fade In on Load
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".fade-in").forEach((el) => {
         el.classList.add("show");
@@ -94,23 +88,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     mediaElements.forEach(media => {
         media.addEventListener("click", function (event) {
-            event.stopPropagation(); // Prevents unwanted bubbling issues
+            event.stopPropagation(); 
 
-            // If already enlarged, shrink back
             if (this.classList.contains("enlarged")) {
                 this.classList.remove("enlarged");
             } else {
-                // Close any other enlarged media before opening this one
                 document.querySelectorAll(".enlarged").forEach(enlargedMedia => {
                     enlargedMedia.classList.remove("enlarged");
                 });
 
-                this.classList.add("enlarged"); // Expand clicked media
+                this.classList.add("enlarged"); 
             }
         });
     });
 
-    // Click anywhere outside to close full-screen media
     document.addEventListener("click", function (event) {
         if (!event.target.classList.contains("project-video") && !event.target.classList.contains("thrive-image")) {
             document.querySelectorAll(".enlarged").forEach(enlargedMedia => {
