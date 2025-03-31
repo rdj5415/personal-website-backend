@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +8,46 @@
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="loading-animation">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading...</div>
+    </div>
 
+    <div class="scroll-progress"></div>
     <div id="particles-js"></div>
 
-    <!-- ✅ Fixed Navbar -->
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="navbar-container">
-            <h1 class="logo">Riaan Joshi</h1>
+            <a href="#" class="logo">RJ</a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests">Interests</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
+            <button class="mobile-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <div class="spacer"></div>
 
@@ -40,7 +63,7 @@
                 <div class="button-spacing"></div>
     
                 <div class="hero-buttons">
-                    <a href="assets/riaan_resume_website.pdf" download class="resume-btn">Download Resume</a>
+                    <a href="assets/Riaan__Joshi__Resume.pdf" download class="resume-btn">Download Resume</a>
                     <a href="https://github.com/rdj5415" target="_blank" class="social-btn">GitHub</a>
                     <a href="https://www.linkedin.com/in/riaan-joshi-in" target="_blank" class="social-btn">LinkedIn</a>
                     <a href="https://instagram.com/riaan_joshi" target="_blank" class="social-btn insta-btn">Instagram</a>
@@ -63,15 +86,15 @@
             <div class="about-text">
                 <h2>About Me</h2>
                 <p>
-                    Hey! I’m a <span class="highlight">data-driven student</span> who’s always looking to learn, build cool things,  
+                    Hey! I'm a <span class="highlight">data-driven student</span> who's always looking to learn, build cool things,  
                     and maybe grab a <span class="highlight">Baja Blast Zero</span> along the way.  
                     I grew up in <span class="highlight">Dallas</span>, played <span class="highlight">soccer</span> and <span class="highlight">wrestled</span> in high school at Coppell,  
                     and somewhere in between all that, I developed a deep love for <span class="highlight">Taco Bell</span> and <span class="highlight">diet drinks</span>.  
                 </p>
 
                 <p>
-                    I started college at <span class="highlight">Texas A&M</span> but quickly realized <span class="highlight">College Station</span> wasn’t the right fit for me.  
-                    So, I transferred to <span class="highlight">UT Austin</span>, where I’ve been diving deep into <span class="highlight">software development</span>  
+                    I started college at <span class="highlight">Texas A&M</span> but quickly realized <span class="highlight">College Station</span> wasn't the right fit for me.  
+                    So, I transferred to <span class="highlight">UT Austin</span>, where I've been diving deep into <span class="highlight">software development</span>  
                     and working on <span class="highlight">machine learning</span> projects with startups.  
                 </p>
 
@@ -87,89 +110,263 @@
         </div>
     </section>
 
-    <section class="floating-section projects-section" id="projects">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="project-crypto">
-            <div class="project-text">
-                <h3><a href="https://github.com/rdj5415/crypto-portfolio-and-predictor" target="_blank">Crypto Portfolio and Price Predictor</a></h3>
-                <p><strong>ML & Financial Engineering</strong></p>
-                <ul>
-                    <li>Built a Python-based crypto portfolio tracker</li>
-                    <li>Integrated financial APIs for real-time prices</li>
-                    <li>Trained an ML model to predict future prices</li>
-                </ul>
+    <section class="floating-section skills-section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-code skill-icon"></i>
+                <h3>Programming</h3>
+                <p>Python, JavaScript, Java</p>
             </div>
-            <div class="project-media">
-                <video src="assets/crypto.mov" class="project-video" autoplay loop muted></video>
+            <div class="skill-card">
+                <i class="fas fa-brain skill-icon"></i>
+                <h3>Machine Learning</h3>
+                <p>TensorFlow, PyTorch, Scikit-learn</p>
             </div>
-        </div>
-        
-        <div class="project-option">
-            <div class="project-text">
-                <h3><a href="https://github.com/rdj5415/option-pricing" target="_blank">Option Pricing Simulator</a></h3>
-                <p><strong>Computational Finance & Simulation</strong></p>
-                <ul>
-                    <li>Simulated stock price paths using models</li>
-                    <li>Developed an interactive pricing web app</li>
-                    <li>Visualized option payoffs with Matplotlib</li>
-                </ul>
+            <div class="skill-card">
+                <i class="fas fa-chart-line skill-icon"></i>
+                <h3>Data Analysis</h3>
+                <p>Pandas, NumPy, Matplotlib</p>
             </div>
-            <div class="project-media">
-                <video src="assets/option_pricing.mov" class="project-video" autoplay loop muted></video>
+            <div class="skill-card">
+                <i class="fas fa-database skill-icon"></i>
+                <h3>Databases</h3>
+                <p>SQL, MongoDB, Firebase</p>
             </div>
-        </div>
-        
-        <div class="project-operation">
-            <div class="project-text">
-                <h3><a href="https://operationservedfw.org" target="_blank">Operation Serve DFW</a></h3>
-                <p><strong>Web Development & Real-Time Data Integration</strong></p>
-                <ul>
-                    <li>Developed responsive React website</li>
-                    <li>Integrated Firebase for real-time updates</li>
-                    <li>Improved SEO and mobile user experience</li>
-                </ul>
+            <div class="skill-card">
+                <i class="fas fa-mobile-alt skill-icon"></i>
+                <h3>Web Development</h3>
+                <p>React, Node.js, HTML/CSS</p>
             </div>
-            <div class="project-media">
-                <video src="assets/operation_serve.mov" class="project-video" autoplay loop muted></video>
+            <div class="skill-card">
+                <i class="fas fa-project-diagram skill-icon"></i>
+                <h3>Tools</h3>
+                <p>Git, Docker, AWS</p>
             </div>
         </div>
-        
-        <div class="project-thrive">
-            <div class="project-text">
-                <h3><a href="https://thethriveeducation.com" target="_blank">Thrive Education</a></h3>
-                <p><strong>Frontend Development & Performance Optimization</strong></p>
-                <ul>
-                    <li>Built scalable data table with React.js</li>
-                    <li>Added search, filtering, and pagination</li>
-                    <li>Developed a working patient dashboard</li>
-                </ul>
-            </div>
-            <div class="project-media">
-                <img src="assets/thrive.png" class="thrive-image" alt="Thrive Project Image">
-            </div>            
-        </div>
-
-               
-
-        
     </section>
 
-        <!-- ✅ CONTACT ME SECTION (NEWLY ADDED) -->
+    <section class="floating-section projects-section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-carousel">
+            <button class="carousel-btn prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="project-container">
+                <!-- Crypto Portfolio Project -->
+                <div class="project-slide active">
+                    <div class="project-content">
+                        <div class="project-media">
+                            <video src="assets/crypto.mov" class="project-video" autoplay loop muted playsinline></video>
+                        </div>
+                        <div class="project-text">
+                            <h3>Crypto Portfolio Tracker</h3>
+                            <ul>
+                                <li>Real-time crypto portfolio tracking with CoinGecko API</li>
+                                <li>Price prediction using LSTM neural networks</li>
+                                <li>Interactive visualizations with Plotly</li>
+                                <li>Portfolio optimization with risk management</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">APIs</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/rdj5415/crypto-portfolio-tracker-and-predictor" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Option Pricing Project -->
+                <div class="project-slide">
+                    <div class="project-content">
+                        <div class="project-media">
+                            <video class="project-video" autoplay loop muted playsinline>
+                                <source src="assets/option_pricing.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-text">
+                            <h3>Option Pricing Simulator</h3>
+                            <ul>
+                                <li>Monte Carlo simulation for stock price modeling</li>
+                                <li>Black-Scholes model implementation</li>
+                                <li>Interactive web interface with Flask</li>
+                                <li>Real-time Greeks calculations</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">Plotly</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/rdj5415/optionpricing" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operation Serve Project -->
+                <div class="project-slide">
+                    <div class="project-content">
+                        <div class="project-media">
+                            <video src="assets/operation_serve.mov" class="project-video" autoplay loop muted playsinline></video>
+                        </div>
+                        <div class="project-text">
+                            <h3>Operation Serve DFW</h3>
+                            <ul>
+                                <li>Responsive React website with modern UI/UX</li>
+                                <li>Firebase Authentication and Database</li>
+                                <li>Dynamic event management system</li>
+                                <li>SEO optimization and analytics</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://operationservedfw.org" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thrive Education Project -->
+                <div class="project-slide">
+                    <div class="project-content">
+                        <div class="project-media">
+                            <img src="assets/thrive.png" class="project-image" alt="Thrive Project">
+                        </div>
+                        <div class="project-text">
+                            <h3>Thrive Education</h3>
+                            <ul>
+                                <li>Scalable data table with advanced filtering</li>
+                                <li>Real-time patient dashboard updates</li>
+                                <li>Performance-optimized React components</li>
+                                <li>Responsive design for all devices</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Material-UI</span>
+                                <span class="tech-tag">REST APIs</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://thethriveeducation.com" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="project-dots"></div>
+        </div>
+    </section>
+
+    <section class="floating-section education-section" id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <h3>University of Texas at Austin</h3>
+                <p class="education-degree">B.S. in Informatics & Data Science</p>
+                <p class="education-date">August 2024 - Present</p>
+                <ul>
+                    <li>GPA: 3.87/4.0</li>
+                    <li>Relevant Coursework: Machine Learning, Data Structures, Intro to Data Science</li>
+                    <li>Activities: Longhorn Wrestling Team, Texas Social Impact Consulting,Data Science Society</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="floating-section interests-section" id="interests">
+        <h2 class="section-title">Interests</h2>
+        <div class="interests-grid">
+            <div class="interest-card">
+                <i class="fas fa-football-ball"></i>
+                <h3>Texas Football</h3>
+                <p>Passionate about Longhorn football and the rich tradition of Texas athletics.</p>
+            </div>
+            <div class="interest-card">
+                <i class="fas fa-medal"></i>
+                <h3>Competitive Wrestling</h3>
+                <p>Active wrestler with experience in collegiate-style competition.</p>
+            </div>
+            <div class="interest-card">
+                <i class="fas fa-glass-whiskey"></i>
+                <h3>Diet Drinks</h3>
+                <p>Enthusiast of zero-calorie beverages and exploring new drink options.</p>
+            </div>
+            <div class="interest-card">
+                <i class="fas fa-fist-raised"></i>
+                <h3>UFC/MMA</h3>
+                <p>Avid follower of mixed martial arts and combat sports.</p>
+            </div>
+            <div class="interest-card">
+                <i class="fas fa-mountain"></i>
+                <h3>Extreme Hiking</h3>
+                <p>Adventure seeker exploring challenging trails and peaks.</p>
+            </div>
+            <div class="interest-card">
+                <i class="fas fa-music"></i>
+                <h3>EDM Music</h3>
+                <p>Electronic dance music enthusiast and festival-goer.</p>
+            </div>
+            <div class="interest-card">
+                <i class="fas fa-tags"></i>
+                <h3>Nutrition Labels</h3>
+                <p>Passionate about understanding food composition and nutritional information.</p>
+            </div>
+            <div class="interest-card">
+                <i class="fas fa-hamburger"></i>
+                <h3>Fast Food</h3>
+                <p>Exploring and reviewing various fast food options and chains.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ CONTACT ME SECTION (NEWLY ADDED) -->
     <section class="floating-section contact-section" id="contact">
         <h2 class="section-title">Contact Me</h2>
-        <form action="https://formspree.io/f/myzkddvv" method="POST" class="contact-form">
+        <form action="https://formspree.io/f/myzkddvv" method="POST" class="contact-form" id="contact-form">
             <div class="input-group">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="text" id="name" name="name" placeholder=" " required>
+                <label for="name">Your Name</label>
             </div>
             <div class="input-group">
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="email" id="email" name="email" placeholder=" " required>
+                <label for="email">Your Email</label>
             </div>
             <div class="input-group">
-                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                <textarea id="message" name="message" placeholder=" " required></textarea>
+                <label for="message">Your Message</label>
             </div>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
+            <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+            </button>
+            <div id="form-message" class="form-message" style="display: none;"></div>
         </form>
     </section>
 
